@@ -1,0 +1,17 @@
+# Clone your new repo
+git clone https://github.com/YOUR_USERNAME/duo-analytics.git
+cd duo-analytics
+
+# Create a standard folder structure for the 12-week plan
+mkdir -p {week01,week02,week03,week04,week05,week06,week07,week08,week09,week10,week11,capstone}/{python,r}
+touch week01/python/hello.py week01/r/hello.R
+
+# Add a basic .gitignore (if you didn't select one)
+echo "__pycache__/" >> .gitignore
+echo ".Rproj.user/" >> .gitignore
+echo ".Rhistory" >> .gitignore
+
+# Commit and push
+git add .
+git commit -m "Initial structure for 12-week dual-track learning"
+git push origin main
